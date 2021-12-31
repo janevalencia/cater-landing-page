@@ -1,0 +1,11 @@
+// Helper scss to load all component files using @forward
+@forward 'buttons';
+@forward 'about';
+@forward 'app';
+@forward 'contact';
+@forward 'header';
+@forward 'footer';
+@forward 'home';
+@forward 'safety';
+@forward 'pricing';
+@forward 'mediaqueries';

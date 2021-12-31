@@ -1,1 +1,10 @@
-// Import all scss
+// Import of partial files
+
+// General
+@use 'config/variables';
+@use 'base/base';
+@use 'theme/theme';
+@use 'layout/layout';
+
+// Components
+@use 'components/_components-dir';

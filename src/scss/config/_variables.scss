@@ -1,0 +1,56 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --header-height: 3rem;
+
+  /* Colors */
+  --hue: 45; //  Yellow: 45   | Red: 4 | Orange: 18  | Green: 118
+  --sat: 98%; // Yellow: 98% | Red: 90% | Orange: 85% | Green: 50%
+  --primary-color: hsl(var(--hue), var(--sat), 60%);
+  --primary-color-light: hsl(var(--hue), var(--sat), 85%);
+  --primary-color-lighter: hsl(var(--hue), var(--sat), 80%);
+  --secondary-color: hsl(var(--hue), var(--sat), 53%);
+  --title-color: hsl(var(--hue), 4%, 15%);
+  --text-color: hsl(var(--hue), 4%, 35%);
+  --text-color-light: hsl(var(--hue), 4%, 65%);
+  --body-color: hsl(var(--hue), 0%, 100%);
+  --container-color: #FFF;
+  --scroll-bar-color: hsl(var(--hue), 4%, 85%);
+  --scroll-thumb-color: hsl(var(--hue), 4%, 75%);
+
+  /* Font */
+  --body-font: 'Noto Sans', sans-serif;
+  --large-font-size: 2rem;
+  --h2-font-size: 1.2rem;
+  --h3-font-size: 1.1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --font-normal: 400;
+  --font-bold: 700;
+
+  /* Margin */
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+
+  /* Z-index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  /* Transition */
+  --trans-length: 0.5s;
+
+  /* Responsive Font */
+  @media screen and (min-width: 968px){
+    --large-font-size: 3rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}

@@ -1,0 +1,66 @@
+.header {
+  background-color: var(--body-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: var(--z-fixed);
+  transition: var(--trans-length); // for animation dark mode
+}
+
+/* NAV */
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    /* Mobile View: Collapsable Menu */
+    @media screen and (max-width: 767px) {
+      background-color: var(--container-color);
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+      border-radius: .5rem;
+      position: fixed;
+      top: -100%; // to hide it at first, then on toggle click shows up
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      padding: 2rem 0;
+      transition: var(--trans-length);
+      width: 91%;
+      z-index: var(--z-fixed);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  &__link,
+  &__logo,
+  &__toggle, {
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+  }
+
+  &__logo {
+    font-size: var(--h2-font-size);
+  }
+
+  &__toggle {
+    cursor: pointer;
+    font-size: var(--h2-font-size);
+  }
+}
+
+/* Nav Toggle: Show */
+.show__menu {
+  top: calc(var(--header-height) + 1rem);
+}
+
+
+/* Dark/Light Mode */

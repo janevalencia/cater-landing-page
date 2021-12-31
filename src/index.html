@@ -7,15 +7,53 @@
 
     <!-- Boxicons -->
     <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <link rel="stylesheet" href="scss/styles.scss">
-    <title>Sass Made Fun</title>
+    <title>Cater</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+<!-- HEADER -->
+<header class="header" id="header">
+    <nav class="nav container">
+        <!-- Logo/Brand -->
+        <a href="#" class="nav__logo">Cater</a>
 
-    <!-- main.js -->
-    <script src="js/main.js"></script>
+        <!-- Nav Items -->
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#pricing" class="nav__link">Pricing</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact us</a>
+                </li>
+
+                <!-- Dark / Light Mode Toggle -->
+                <i class='bx bx-toggle-left change-theme' id="theme-button"></i>
+            </ul>
+        </div>
+
+        <!-- Menu Toggle Collapsable -->
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-grid-alt'></i>
+        </div>
+
+        <!-- CTA -->
+        <a href="#" class="button button__header">Subscribe Now!</a>
+    </nav>
+</header>
+
+<!-- MAIN -->
+
+
+<!-- main.js -->
+<script src="js/main.js"></script>
 </body>
 </html>
