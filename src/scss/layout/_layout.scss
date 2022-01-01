@@ -1,6 +1,6 @@
 /* Reusable CSS classes */
 .section {
-  padding: 4.5rem 0 1rem;
+  padding: 3.5rem 0 1rem;
 
   &__title, &__title-center {
     color: var(--text-color);
@@ -11,19 +11,13 @@
 }
 
 .svg {
-  &__color {
-    fill: var(--primary-color);
-  }
-  &__blob {
-    fill: var(--primary-color-light);
-  }
   &__img {
     width: 300px;
     justify-self: center;
   }
 }
 
-/* Layout CSS */
+/* Layout */
 .container {
   max-width: 968px;
   margin: 0 var(--mb-1-5) 0 var(--mb-1-5);
