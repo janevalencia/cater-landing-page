@@ -2,7 +2,7 @@
 .section {
   padding: 3.5rem 0 1rem;
 
-  &__title, &__title-center {
+  &__title {
     color: var(--text-color);
     font-size: var(--h2-font-size);
     text-align: center;
@@ -12,7 +12,7 @@
 
 .svg {
   &__img {
-    width: 300px;
+    width: 400px;
     justify-self: center;
   }
 }
