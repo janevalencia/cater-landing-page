@@ -15,6 +15,7 @@
   &__active {
     background-color: var(--container-color);
     border: 2px solid var(--primary-color);
+    color: var(--text-color);
   }
 
   &:hover {

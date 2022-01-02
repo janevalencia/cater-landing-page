@@ -1,0 +1,24 @@
+/* Toggle Button */
+.toggle-theme {
+    cursor: pointer;
+    position: absolute;
+    top: 0.8rem;
+    right: 2rem;
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+}
+
+/* Variables for Dark Theme */
+body.dark-theme {
+    --primary-color-light: hsl(var(--hue), var(--sat), 75%);
+    --title-color: hsl(var(--hue), 4%, 95%);
+    --text-color: hsl(var(--hue), 4%, 80%);
+    --body-color: hsl(var(--hue), 8%, 13%);
+    --container-color: hsl(var(--hue), 8%, 16%);
+    --scroll-bar-color: hsl(var(--hue), 4%, 30%);
+    --scroll-thumb-color: hsl(var(--hue), 4%, 25%);
+}
+
+.dark-theme .footer {
+    background-color: var(--container-color);
+}

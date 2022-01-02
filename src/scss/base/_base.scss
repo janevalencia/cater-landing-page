@@ -14,7 +14,7 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  // transition: var(--trans-length); // animation for dark mode
+  transition: var(--trans-length); // animation for dark mode
 }
 
 h1, h2, h3 {

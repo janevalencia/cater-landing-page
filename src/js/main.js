@@ -71,3 +71,40 @@ window.addEventListener('scroll', function scrollHeader() {
 })
 
 /* =========== DARK / LIGHT MODE ================ */
+const themeToggle = document.getElementById('theme-toggle');
+const darkTheme = 'dark-theme';
+const iconTheme = 'bx-toggle-right';
+
+// Previously selected theme (if any)
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => themeToggle.classList.contains(iconTheme) ? 'bx-toggle-left' : 'bx-toggle-right';
+
+// When user has selected a theme, activate/deactive the theme accordingly
+if (selectedTheme) {
+  if (selectedTheme === 'dark') {
+      document.body.classList.add(darkTheme);
+  } else {
+    document.body.classList.remove(darkTheme);
+  }
+
+  if (selectedIcon === 'bx-toggle-left') {
+    themeToggle.classList.add(iconTheme);
+  } else {
+    themeToggle.classList.remove(iconTheme);
+  }
+}
+
+// Activate / deactivate the theme manually with the button
+themeToggle.addEventListener('click', () => {
+    // Add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme);
+    themeToggle.classList.toggle(iconTheme);
+    
+    // Save the theme that the user has chosen in localStorage
+    localStorage.setItem('selected-theme', getCurrentTheme());
+    localStorage.setItem('selected-icon', getCurrentIcon());
+})
