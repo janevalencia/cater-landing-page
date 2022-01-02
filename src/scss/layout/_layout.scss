@@ -15,6 +15,12 @@
     width: 400px;
     justify-self: center;
   }
+  &__color{
+    fill: var(--primary-color);
+  }
+  &__blob{
+    fill: var(--primary-color-light);
+}
 }
 
 /* Layout */
