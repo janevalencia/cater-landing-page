@@ -48,10 +48,15 @@ window.addEventListener('scroll', function scrollActiveLink() {
 })
 
 // Show Scroll Top Icon
+window.addEventListener('scroll', function showScrollTop() {
+    const scrollUp = document.getElementById('scrollUp');
 
-
-// Show Scroll Bottom Icon
-
+    if (this.scrollY >= 560) {
+        scrollUp.classList.add('show__scrollup');
+    } else {
+        scrollUp.classList.remove('show__scrollup');
+    }
+})
 
 // Change background header upon scrolling
 window.addEventListener('scroll', function scrollHeader() {
@@ -64,3 +69,5 @@ window.addEventListener('scroll', function scrollHeader() {
         siteHeader.classList.remove('scroll-header');
     }
 })
+
+/* =========== DARK / LIGHT MODE ================ */
