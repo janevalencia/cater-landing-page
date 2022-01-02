@@ -25,3 +25,19 @@
 .show__scrollup {
     bottom: 3rem;
 }
+
+/* Custom Scroll Bar */
+::-webkit-scrollbar {
+    width: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--scroll-bar-color);
+
+    &-thumb {
+        background-color: var(--scroll-thumb-color);
+        border-radius: 0.3rem;
+
+        &:hover {
+            background-color: var(--text-color-light);
+        }
+    }
+}
