@@ -62,7 +62,7 @@
   top: calc(var(--header-height) + 1rem);
 }
 
-/* Active Link */
+/* Active Link upon scrolling */
 .active-link {
   position: relative;
 
@@ -79,4 +79,7 @@
 }
 
 
-/* Dark/Light Mode */
+/* Change the header background upon scrolling */
+.scroll-header {
+  box-shadow: 0 1px 4px var(--primary-color-lighter);
+}

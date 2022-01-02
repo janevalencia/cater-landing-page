@@ -28,13 +28,10 @@ navToggle('nav-toggle','nav-menu');
 navItemCollapse('.nav__item', 'nav-menu');
 
 /* ============= SITE SCROLLING ================= */
-// Add active-link CSS to the nav-menu being selected by user
-// Query all sections with element ID
-const sections = document.querySelectorAll('section[id]');
 
-// Scrolling event
-window.addEventListener('scroll', () => {
-    const scrollY = window.pageYOffset;
+// Add active-link CSS to the nav-menu being selected by user
+window.addEventListener('scroll', function scrollActiveLink() {
+    const sections = document.querySelectorAll('section[id]');
 
     sections.forEach(current => {
         const height = current.offsetHeight;
@@ -42,10 +39,28 @@ window.addEventListener('scroll', () => {
 
         sectionID = current.getAttribute('id');
 
-        if (scrollY > top && scrollY <= top + height) {
+        if (this.scrollY > top && this.scrollY <= top + height) {
             document.querySelector('.nav__menu a[href*=' + sectionID + ']').classList.add('active-link');
         } else {
             document.querySelector('.nav__menu a[href*=' + sectionID + ']').classList.remove('active-link');
         }
     })
+})
+
+// Show Scroll Top Icon
+
+
+// Show Scroll Bottom Icon
+
+
+// Change background header upon scrolling
+window.addEventListener('scroll', function scrollHeader() {
+    const siteHeader = document.getElementById('header');
+
+    // When scroll is greater than 200 viewport in height, add scroll-header CSS to header
+    if (this.scrollY >= 200) {
+        siteHeader.classList.add('scroll-header');
+    } else {
+        siteHeader.classList.remove('scroll-header');
+    }
 })
