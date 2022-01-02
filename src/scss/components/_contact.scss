@@ -1,0 +1,23 @@
+.contact {
+    &__container {
+        padding-bottom: 3rem;
+    }
+    &__description {
+        text-align: center;
+    }
+    &__details {
+        font-size: var(--small-font-size);
+        font-weight: var(--font-bold);
+        color: var(--title-color);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    &__data {
+        font-weight: initial;
+        color: var(--text-color);
+    }
+    &__icon {
+        font-size: var(--h3-font-size);
+    }
+}
