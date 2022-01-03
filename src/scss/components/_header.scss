@@ -17,8 +17,8 @@
 
   &__menu {
     
-    /* Mobile View: Collapsable Menu */
-    @media screen and (max-width: 768px) {
+    /* Show collapsable menu, except when viewport is desktop/larger size */
+    @media screen and (max-width: 1000px) {
       background-color: var(--container-color);
       box-shadow: 0 0 4px rgba(0,0,0,0.1);
       border-radius: .5rem;

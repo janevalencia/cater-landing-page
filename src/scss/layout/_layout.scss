@@ -1,6 +1,6 @@
 /* Reusable CSS classes */
 .section {
-  padding: 3.5rem 0 1rem;
+  padding: 2rem 0 1rem;
 
   &__title {
     color: var(--text-color);
@@ -12,7 +12,8 @@
 
 .svg {
   &__img {
-    width: 400px;
+    width: 350px;
+    height: auto;
     justify-self: center;
   }
   &__color{
