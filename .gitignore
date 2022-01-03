@@ -1,3 +1,6 @@
+# parcel
+.parcel-cache/
+
 # build
 dist/
 
