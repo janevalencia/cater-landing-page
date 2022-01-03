@@ -9,6 +9,7 @@
 
     &__buttons {
         display: grid;
+        padding: 2rem 0;
         grid-template-columns: repeat(2, max-content);
         justify-content: center;
         gap: 1rem;

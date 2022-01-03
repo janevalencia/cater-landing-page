@@ -108,3 +108,7 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCurrentIcon());
 })
+
+/* =========== FOOTER COPYRIGHT YEAR ============= */
+document.getElementById('copyright')
+    .appendChild(document.createTextNode(new Date().getFullYear()));

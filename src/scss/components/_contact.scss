@@ -5,6 +5,9 @@
     &__description {
         text-align: center;
     }
+    &__content {
+        align-self: start;
+    }
     &__details {
         font-size: var(--small-font-size);
         font-weight: var(--font-bold);

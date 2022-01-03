@@ -1,0 +1,135 @@
+/* =================== Mobile ==================== */
+@media screen and (max-width: 414px) {
+    .svg__img {
+        width: 100%;
+    }
+
+    .section {
+        padding: 3rem 1rem 1rem;
+    }
+
+    .app__buttons {
+        grid-template-columns: max-content;
+    }
+}
+
+/* ================= Tablet ==================== */
+@media screen and (min-width: 768px) {
+    .svg__img{
+        width: 100%;
+    }
+
+    .section {
+        margin: 0 auto;
+        padding: 4rem 2rem;
+    }
+
+    .section__title {
+        text-align: initial;
+    }
+
+    .home__container, 
+    .about__container,
+    .safety__container,
+    .pricing__header,
+    .app__container,
+    .contact__container,
+    .footer__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home__container,
+    .about__container,
+    .safety__container,
+    .pricing__header,
+    .app__container,
+    .contact__container{
+        align-items: center;
+        column-gap: 3rem;
+    }
+
+    .about__description,
+    .safety__description,
+    .app__description,
+    .contact__description {
+        text-align: initial;
+    }
+    
+    .home__img,
+    .app__img, 
+    .safety__img {
+        order: -1;
+    }
+
+    .app__buttons {
+        justify-content: initial;
+    }
+}
+
+
+/* ================= Desktop and larger ===================== */
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 0;
+    }
+
+    .section {
+        margin: 0 auto;
+        padding: 4rem;
+    }
+
+    .container {
+        max-width: 1320px;
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+
+        &.container {
+            max-width: 100%;
+        }
+
+        &__list {
+            flex-direction: row;
+            column-gap: 2.5rem;
+        }
+
+        &__toggle {
+            display: none;
+        }
+    }
+
+    .toggle-theme {
+        position: initial;
+    }
+
+    .home__container {
+        padding: 8rem 0 2rem;
+    }
+
+    .pricing__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact__container {
+        grid-template-columns: 2.5fr 2fr 1fr;
+    }
+
+    .button__header {
+        display: initial;
+    }
+
+    .svg__img {
+        width: 500px;
+    }
+
+    .footer {
+        &__container {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        &__copy {
+            grid-column: 1/3;
+        }
+    }
+}
