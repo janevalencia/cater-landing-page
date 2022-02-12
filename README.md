@@ -1,4 +1,4 @@
-author: Jane Valencia
+Author: Jane Valencia
 
 # sass-made-fun
 
